@@ -14,7 +14,20 @@
       </li>
     </ul>
   </div>
-  <div class="dash-item"><h3>All Reviews</h3></div>
+  <div class="dash-item">
+    <h3>All Reviews</h3>
+    <ul class="all-reviews">
+      <li *ngFor="let movie of movies">
+        <button
+          [class.selected]="movie === selectedMovie"
+          type="button"
+          (click)="onSelect(movie)"
+        >
+          <span class="button-movieTitle">{{ movie.reviewTitle }}</span>
+        </button>
+      </li>
+    </ul>
+  </div>
 </div>
 <div class="movieSelectDetails">
   <div *ngIf="selectedMovie">
