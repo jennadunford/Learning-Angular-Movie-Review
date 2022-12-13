@@ -1,0 +1,29 @@
+<div class="dash-title"><h2>Dashboard</h2></div>
+<div class="dash-stuff">
+  <div class="dash-item">
+    <h3>All Movies</h3>
+    <ul class="all-movies">
+      <li *ngFor="let movie of movies">
+        <button
+          [class.selected]="movie === selectedMovie"
+          type="button"
+          (click)="onSelect(movie)"
+        >
+          <span class="button-movieTitle">{{ movie.movieTitle }}</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <div class="dash-item"><h3>All Reviews</h3></div>
+</div>
+<div class="movieSelectDetails">
+  <div *ngIf="selectedMovie">
+    <div>{{ selectedMovie.movieTitle }} Details</div>
+    <div>id: {{ selectedMovie.id }}</div>
+    <div>Director: {{ selectedMovie.movDirector }}</div>
+    <div>
+      Released: {{ selectedMovie.dateReleased }} /
+      {{ selectedMovie.monthReleased }} / {{ selectedMovie.yearReleased }}
+    </div>
+  </div>
+</div>

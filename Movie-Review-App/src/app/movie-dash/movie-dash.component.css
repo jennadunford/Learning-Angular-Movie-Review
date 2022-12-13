@@ -1,0 +1,32 @@
+div.dash-title {
+  text-align: center;
+  font-size: 3vw;
+  position: relative;
+  top: -11vw;
+}
+
+div.dash-stuff {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  top: -15vw;
+}
+
+div.dash-item {
+  display: block;
+  margin: 0rem;
+  width: 10vw;
+  flex-direction: row;
+}
+
+div h3 {
+  font-size: 1.9vw;
+}
+
+div.movieSelectDetails {
+  display: block;
+  font-size: 2vw;
+  text-align: center;
+  position: relative;
+  top: -15vw;
+}

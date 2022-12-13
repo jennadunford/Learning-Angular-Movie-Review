@@ -17,7 +17,22 @@ div.site-title {
 
 nav {
   display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  top: -9vw;
 }
 a {
-  padding: 2%;
+  padding: 1rem;
+  margin: 0rem;
+  font-size: 2vw;
+  display: inline-block;
+  background-color: rgb(179, 72, 101);
+  color: white;
+  border-radius: 5px;
+}
+nav a:hover {
+  color: white;
+  background-color: #42545c;
+  cursor: pointer;
 }
