@@ -14,6 +14,19 @@
       <a routerLink="/newReview">New Review</a>
     </nav>
     <router-outlet></router-outlet>
-    <app-messages></app-messages>
+    <h3>Movie Results</h3>
+    <input #movieBox id="movie-name" placeholder="Movie name" />
+    <p *ngFor="let movie of movieData.results">
+      {{ movie.title }}<br />
+      {{ movie.description }}
+    </p>
+    <h3>
+      Welcome to {{ title }}!
+      <p *ngFor="let country of countryData">
+        {{ country.name.official }} <br />
+        Population:
+        {{ country.population }}
+      </p>
+    </h3>
   </body>
 </html>
