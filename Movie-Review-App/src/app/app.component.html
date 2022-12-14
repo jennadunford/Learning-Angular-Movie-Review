@@ -7,12 +7,13 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="site-title"><h1>My Movie Review</h1></div>
+    <div class="site-title"><h1>The Jenna Review</h1></div>
     <nav>
-      <a>All Movies</a>
-      <a>Movie Dashboard</a>
-      <a>New Review</a>
+      <a routerLink="/allReviews">All Movies</a>
+      <a routerLink="/movieDash">Movie Dashboard</a>
+      <a routerLink="/newReview">New Review</a>
     </nav>
-    <app-movie-dash></app-movie-dash>
+    <router-outlet></router-outlet>
+    <app-messages></app-messages>
   </body>
 </html>

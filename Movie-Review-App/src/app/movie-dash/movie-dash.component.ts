@@ -8,14 +8,7 @@ import { MOVIES } from '../movie-content';
   styleUrls: ['./movie-dash.component.css'],
 })
 export class MovieDashComponent implements OnInit {
-  movies = MOVIES;
-  selectedMovie?: Movie;
-
   constructor() {}
 
   ngOnInit(): void {}
-
-  onSelect(movie: Movie): void {
-    this.selectedMovie = movie;
-  }
 }
